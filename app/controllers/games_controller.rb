@@ -75,6 +75,6 @@ class GamesController < ApplicationController
     end
 
     def word_from_isograms_file
-      File.readlines("isograms.txt").sample.strip
+      File.readlines("common_isograms.txt").sample.strip
     end
 end

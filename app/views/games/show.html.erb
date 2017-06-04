@@ -9,7 +9,7 @@
   <div class="col-lg-6">
     <h4>Previous guesses</h4>
     <% @game.guesses.each do |guess| %>
-      <p><%= guess.word %>- Bulls:<%= guess.result.bulls %>  Cows:<%= guess.result.cows %></p>
+      <p><%= guess.word %>: <%= guess.result.bulls %> Bulls, <%= guess.result.cows %> Cows</p>
     <% end %>
   </div>
 </div>
