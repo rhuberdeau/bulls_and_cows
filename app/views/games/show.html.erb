@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<div class="row marketing">
+  <div class="col-lg-6">
+    <h4>Please enter a guess</h4>
+    <%= render 'form', game: @game %>
+  </div>
+
+  <div class="col-lg-6">
+    <h4>Previous guesses</h4>
+    <% @game.guesses.each do |guess| %>
+      <p><%= guess.word %>- Bulls:<%= guess.result.bulls %>  Cows:<%= guess.result.cows %></p>
+    <% end %>
+  </div>
+</div>
